@@ -74,6 +74,14 @@
         name="org.eclipse.egit.ui">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/HistoryView_MaxBranchLength"
+          value="30"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/HistoryView_MaxTagLength"
+          value="30"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.egit.ui/resourcehistory_show_additionalrefs"
           value="true"/>
       <setupTask
