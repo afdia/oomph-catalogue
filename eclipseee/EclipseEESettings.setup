@@ -3,14 +3,13 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:git="http://www.eclipse.org/oomph/setup/git/1.0"
-    xmlns:jdt="http://www.eclipse.org/oomph/setup/jdt/1.0"
+    xmlns:jdt_1.0="http://www.eclipse.org/oomph/setup/jdt/1.0"
     xmlns:predicates="http://www.eclipse.org/oomph/predicates/1.0"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    xmlns:setup.targlets="http://www.eclipse.org/oomph/setup/targlets/1.0"
-    xmlns:setup.workingsets="http://www.eclipse.org/oomph/setup/workingsets/1.0"
-    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore"
+    xmlns:targlets_1.0="http://www.eclipse.org/oomph/setup/targlets/1.0"
+    xmlns:workingsets_1.0="http://www.eclipse.org/oomph/setup/workingsets/1.0"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore"
     name="eclipseee.settings"
     label="EclipseEE Settings">
   <setupTask
@@ -49,12 +48,6 @@
     </setupTask>
   </setupTask>
   <setupTask
-      xsi:type="jdt:JRETask"
-      version="JavaSE-1.7"
-      location="${jre.location-1.7}">
-    <description>Define the JRE needed to compile and run the Java projects of ${scope.project.label}</description>
-  </setupTask>
-  <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Xmx"
       value="2048m"
@@ -76,32 +69,53 @@
       storageURI="scope://Workspace"/>
   <setupTask
       xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.eclipse.egit.feature.group"
+        filter=""/>
+    <requirement
+        name="org.eclipse.m2e.wtp.feature.feature.group"
+        filter=""/>
+    <requirement
+        name="org.eclipse.m2e.wtp.jpa.feature.feature.group"
+        filter=""/>
+    <requirement
+        name="org.eclipse.m2e.wtp.jaxrs.feature.feature.group"
+        filter=""/>
+    <requirement
+        name="org.eclipse.wst.web_ui.feature.feature.group"
+        filter=""/>
+    <requirement
+        name="org.eclipse.jst.web_ui.feature.feature.group"
+        filter=""/>
+    <requirement
+        name="org.eclipse.wst.xml_ui.feature.feature.group"
+        filter=""/>
+    <requirement
+        name="org.eclipse.jst.enterprise_ui.feature.feature.group"/>
+    <requirement
+        name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+    <requirement
+        name="org.moreunit.feature.group"/>
+    <requirement
+        name="com.mountainminds.eclemma.feature.feature.group"/>
+    <repository
+        url="http://moreunit.sourceforge.net/update-site/"/>
+    <repository
+        url="http://update.eclemma.org/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
+  <logicalProjectContainer
+      xsi:type="setup:ProjectCatalog"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']"/>
+  <description>EclipseEE Settings provides cool stuff.</description>
   <setupTask
-      xsi:type="git:GitCloneTask"
-      id="git.clone"
-      filter=""
-      remoteURI="https://github.com/afdia/oomph-catalogue">
-    <annotation
-        source="http://www.eclipse.org/oomph/setup/InducedChoices">
-      <detail
-          key="inherit">
-        <value>github.remoteURIs</value>
-      </detail>
-      <detail
-          key="label">
-        <value>${scope.project.label} Github repository</value>
-      </detail>
-      <detail
-          key="target">
-        <value>remoteURI</value>
-      </detail>
-    </annotation>
-    <description>${scope.project.label}</description>
+      xsi:type="jdt_1.0:JRETask"
+      version="JavaSE-1.7"
+      location="${jre.location-1.7}">
+    <description>Define the JRE needed to compile and run the Java projects of ${scope.project.label}</description>
   </setupTask>
   <setupTask
-      xsi:type="setup.targlets:TargletTask">
+      xsi:type="targlets_1.0:TargletTask">
     <targlet
         name="${scope.project.label}"
         activeRepositoryList="${eclipse.target.platform}">
@@ -135,7 +149,7 @@
     </targlet>
   </setupTask>
   <setupTask
-      xsi:type="setup.workingsets:WorkingSetTask">
+      xsi:type="workingsets_1.0:WorkingSetTask">
     <workingSet
         name="${scope.project.name}">
       <predicate
@@ -147,10 +161,4 @@
     </workingSet>
     <description>The dynamic working sets for ${scope.project.label}</description>
   </setupTask>
-  <stream name="master"
-      label="Master"/>
-  <logicalProjectContainer
-      xsi:type="setup:ProjectCatalog"
-      href="index:/org.eclipse.setup#//@projectCatalogs[name='com.github']"/>
-  <description>EclipseEE Settings provides cool stuff.</description>
 </setup:Project>
