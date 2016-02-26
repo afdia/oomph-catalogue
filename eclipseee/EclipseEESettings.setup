@@ -5,8 +5,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    name="afdiaeclipseee"
-    label="AFDiaEclipseEE">
+    name="andreas_eclipseee"
+    label="Andreas EclipseEE">
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
@@ -389,5 +389,5 @@
           url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
     </setupTask>
   </version>
-  <description>To make your life easier, we at EclipseSource would like to share our experience with the Eclipse IDE by sharing our standard settings and installed plug-ins with you. Of course, we sometimes use different settings for different projects, so this is kind of the common denominator and our starting point for new projects. To make this more useful, we will also describe the settings we apply and the plug-ins we install in a blog series.: http://eclipsesource.com/blogs/2015/08/17/introducing-the-eclipsesource-oomph-profile/</description>
+  <description>EclipseEE with several preinstalled plugins and m2e connectors as well as many settings suchas customized formatter, cleanup, warnings and error settings</description>
 </setup:Product>
