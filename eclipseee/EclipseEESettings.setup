@@ -295,7 +295,7 @@
       <setupTask
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.typefilter.enabled"
-          value="java.awt.*;"/>
+          value="java.awt.List;"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/smart_opening_brace"
