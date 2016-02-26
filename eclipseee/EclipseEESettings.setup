@@ -31,16 +31,72 @@
         value="true"/>
     <setupTask
         xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.core.resources/refresh.enabled"
-        value="true"/>
-    <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.typefilter.enabled"
+        key="org.eclipse.jdt.ui.typefilter.enabled"
         value="java.awt.*;"/>
     <setupTask
-        xsi:type="setup:PreferenceTask"
-        key="/instance/org.eclipse.core.resources/encoding"
-        value="UTF-8"/>
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.core.resources">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/refresh.enabled"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/refresh.lightweight.enabled"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="encoding"
+          value="UTF-8"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.debug.ui">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.debug.ui/Console.limitConsoleOutput"
+          value="false"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.egit.ui">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/resourcehistory_show_additionalrefs"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/resourcehistory_show_all_branches"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/resourcehistory_show_notes"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/resourcehistory_show_relative_date"
+          value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/sync_view_show_changeset_model"
+          value="true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.wst.xml.core">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.wst.xml.core/lineWidth"
+          value="999"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.eclipse.jdt.ui">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.typefilter.enabled"
+          value="java.awt.*;"/>
+    </setupTask>
   </setupTask>
   <version name="latest.released"
       label="Latest Release (Mars)"
@@ -67,16 +123,22 @@
       <requirement
           name="org.eclipse.pde.feature.group"
           versionRange="[3.11.0,3.12.0)"/>
-      <requirement name="org.pitest.pitclipse.feature.feature.group"/>
-      <requirement name="org.moreunit.feature.group"/>
-      <requirement name="com.mountainminds.eclemma.feature.feature.group"/>
+      <requirement
+          name="org.pitest.pitclipse.feature.feature.group"/>
+      <requirement
+          name="org.moreunit.feature.group"/>
+      <requirement
+          name="com.mountainminds.eclemma.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/technology/epp/packages/mars"/>
       <repository
           url="http://download.eclipse.org/releases/mars/201510021000"/>
-      <repository url="http://eclipse.pitest.org/release"/>
-      <repository url="http://moreunit.sourceforge.net/update-site/"/>
-      <repository url="http://update.eclemma.org/"/>
+      <repository
+          url="http://eclipse.pitest.org/release"/>
+      <repository
+          url="http://moreunit.sourceforge.net/update-site/"/>
+      <repository
+          url="http://update.eclemma.org/"/>
     </setupTask>
   </version>
   <description>To make your life easier, we at EclipseSource would like to share our experience with the Eclipse IDE by sharing our standard settings and installed plug-ins with you. Of course, we sometimes use different settings for different projects, so this is kind of the common denominator and our starting point for new projects. To make this more useful, we will also describe the settings we apply and the plug-ins we install in a blog series.: http://eclipsesource.com/blogs/2015/08/17/introducing-the-eclipsesource-oomph-profile/</description>
