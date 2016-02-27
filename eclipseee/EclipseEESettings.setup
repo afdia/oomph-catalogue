@@ -258,10 +258,6 @@
           value="true"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
-          key="/instance/org.eclipse.jdt.ui/content_assist_insert_completion"
-          value="false"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/content_assist_prefix_completion"
           value="true"/>
       <setupTask
