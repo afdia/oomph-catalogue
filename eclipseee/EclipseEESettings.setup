@@ -5,8 +5,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
-    name="andreas_eclipseee"
-    label="Andreas EclipseEE">
+    name="eclipseee"
+    label="Andreas Eclipse">
   <setupTask
       xsi:type="setup.p2:P2Task">
     <requirement
@@ -414,7 +414,7 @@
           value="999"/>
     </setupTask>
   </setupTask>
-  <version name="latest.released"
+  <version name="ee-mars"
       label="Latest Release (Mars)"
       requiredJavaVersion="1.7">
     <annotation
