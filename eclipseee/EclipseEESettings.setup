@@ -414,7 +414,8 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Eclipse IDE for Java EE Developers (Mars)">
+        label="Eclipse IDE for Java EE Developers (Mars)"
+        licenseConfirmationDisabled="true">
       <requirement
           name="epp.package.jee"
           versionRange="[4.5.0,4.6.0)"/>
@@ -437,6 +438,12 @@
           name="org.sonatype.m2e.buildhelper.feature.feature.group"/>
       <requirement
           name="org.jboss.tools.maven.apt.feature.feature.group"/>
+      <requirement
+          name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
+      <requirement
+          name="com.basistech.m2e.code.quality.checkstyle.feature.feature.group"/>
+      <requirement
+          name="com.basistech.m2e.code.quality.pmd.feature.feature.group"/>
       <repository
           url="http://download.eclipse.org/technology/epp/packages/mars"/>
       <repository
@@ -451,6 +458,8 @@
           url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
       <repository
           url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
+      <repository
+          url="https://m2e-code-quality.github.io/m2e-code-quality/site"/>
     </setupTask>
   </version>
   <description>EclipseEE with several preinstalled plugins and m2e connectors as well as many settings suchas customized formatter, cleanup, warnings and error settings</description>
