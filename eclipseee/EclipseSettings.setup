@@ -413,6 +413,14 @@
           key="/instance/org.eclipse.wst.xml.core/lineWidth"
           value="999"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.jboss.tools.maven.apt">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.jboss.tools.maven.apt/org.jboss.tools.maven.apt.mode"
+          value="jdt_apt"/>
+    </setupTask>
   </setupTask>
   <version name="ee-mars"
       label="Mars EE+PDE+Plugins"
