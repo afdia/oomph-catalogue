@@ -426,7 +426,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Eclipse IDE for Java EE Developers (Mars)"
+        label="Custom Plugins"
         licenseConfirmationDisabled="true">
       <requirement
           name="org.pitest.pitclipse.feature.feature.group"/>
@@ -442,6 +442,8 @@
           name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
       <requirement
           name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+      <requirement
+          name="org.mapstruct.eclipse.feature.feature.group"/>
       <repository
           url="http://eclipse.pitest.org/release"/>
       <repository
@@ -456,6 +458,8 @@
           url="https://m2e-code-quality.github.io/m2e-code-quality/site"/>
       <repository
           url="http://findbugs.cs.umd.edu/eclipse"/>
+      <repository
+          url="https://mapstruct.ci.cloudbees.com/job/mapstruct-eclipse/lastSuccessfulBuild/artifact/org.mapstruct.eclipse.repository/target/repository/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
