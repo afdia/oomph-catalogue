@@ -59,6 +59,10 @@
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.UseContextualLaunch"
           value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction"
+          value="true"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
