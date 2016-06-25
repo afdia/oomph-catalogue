@@ -95,6 +95,14 @@
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.egit.ui/sync_view_show_changeset_model"
           value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/checkBeforeCommitting"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.egit.ui/warnBeforeCommitting"
+          value="1"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
