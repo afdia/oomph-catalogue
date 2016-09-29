@@ -266,7 +266,7 @@
       <setupTask
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/content_assist_favorite_static_members"
-          value="org.assertj.core.api.Assertions.*;org.junit.Assume.*"/>
+          value="org.assertj.core.api.Assertions.*;org.junit.Assume.*;org.mockito.Matchers.*;org.mockito.Mockito.*"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/content_assist_guess_method_arguments"
