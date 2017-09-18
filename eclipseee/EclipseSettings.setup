@@ -460,6 +460,18 @@
           key="/instance/org.jboss.tools.maven.apt/org.jboss.tools.maven.apt.mode"
           value="jdt_apt"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="org.moreunit">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.moreunit/org.moreunit.test_annotation"
+          value="BY_NAME"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.moreunit/org.moreunit.test_methodType"
+          value="testMethodTypeNoPrefix"/>
+    </setupTask>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
