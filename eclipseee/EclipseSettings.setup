@@ -708,7 +708,7 @@
     <description>My Product for Neon.</description>
   </version>
   <version name="oxygen"
-      label="Oxygen EE+Plugins+Findbugs"
+      label="Oxygen EE+Plugins+Spotbugs"
       requiredJavaVersion="1.8">
     <annotation
         source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -858,13 +858,13 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Findbugs">
+        label="Spotbugs">
       <requirement
-          name="com.basistech.m2e.code.quality.findbugs.feature.feature.group"/>
+          name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
       <requirement
-          name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+          name="com.github.spotbugs.plugin.eclipse.feature.group"/>
       <repository
-          url="http://findbugs.cs.umd.edu/eclipse"/>
+          url="https://spotbugs.github.io/eclipse"/>
       <repository
           url="https://m2e-code-quality.github.io/m2e-code-quality/site"/>
     </setupTask>
