@@ -281,6 +281,10 @@
           value="true"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/escapeStrings"
+          value="false"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/formatter_profile"
           value="_Eclipse Custom"/>
       <setupTask
