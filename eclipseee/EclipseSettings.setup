@@ -1024,15 +1024,11 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Spotbugs">
-      <requirement
-          name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
+        label="Spotbugs (currently without m2e)">
       <requirement
           name="com.github.spotbugs.plugin.eclipse.feature.group"/>
       <repository
           url="https://spotbugs.github.io/eclipse"/>
-      <repository
-          url="https://m2e-code-quality.github.io/m2e-code-quality/site"/>
     </setupTask>
   </version>
   <description>EclipseEE with several preinstalled plugins and m2e connectors as well as many settings suchas customized formatter, cleanup, warnings and error settings</description>
