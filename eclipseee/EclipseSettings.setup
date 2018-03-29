@@ -486,8 +486,6 @@
       label="Custom Plugins"
       licenseConfirmationDisabled="true">
     <requirement
-        name="org.pitest.pitclipse.feature.feature.group"/>
-    <requirement
         name="org.moreunit.feature.group"/>
     <requirement
         name="org.eclipse.eclemma.feature.feature.group"/>
@@ -499,8 +497,6 @@
         name="org.mapstruct.eclipse.feature.feature.group"/>
     <requirement
         name="com.ifedorenko.m2e.sourcelookup.feature.feature.group"/>
-    <repository
-        url="http://eclipse.pitest.org/release"/>
     <repository
         url="http://moreunit.sourceforge.net/update-site/"/>
     <repository
