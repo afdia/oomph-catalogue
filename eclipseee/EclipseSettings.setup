@@ -407,6 +407,10 @@
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.ui/sp_cleanup.use_parentheses_in_expressions"
           value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.sortLibraryEntriesByName"
+          value="true"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
