@@ -31,6 +31,10 @@
           xsi:type="setup:PreferenceTask"
           key="encoding"
           value="UTF-8"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/maxConcurrentBuilds"
+          value="4"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
