@@ -890,7 +890,7 @@
     </setupTask>
   </version>
   <version name="latest"
-      label="Photon EE+Plugins+Spotbugs"
+      label="Latest EE+Plugins+Spotbugs"
       requiredJavaVersion="1.8">
     <annotation
         source="http://www.eclipse.org/oomph/setup/BrandingInfo">
@@ -901,7 +901,7 @@
     </annotation>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Eclipse IDE for Java EE Developers (Photon)">
+        label="Eclipse IDE for Java EE Developers (Latest)">
       <requirement
           name="epp.package.jee"
           versionRange="[4.8.0,5.0.0)"/>
@@ -924,15 +924,69 @@
       <requirement
           name="org.eclipse.datatools.connectivity.feature.feature.group"/>
       <requirement
+          name="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.connectivity.oda.feature.feature.group"/>
+      <requirement
           name="org.eclipse.datatools.doc.user.feature.group"/>
       <requirement
+          name="org.eclipse.datatools.enablement.apache.derby.feature.feature.group"/>
+      <requirement
           name="org.eclipse.datatools.enablement.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.hsqldb.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.ibm.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.ingres.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.jdbc.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.jdt.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.msft.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.mysql.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.oda.designer.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.oda.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.oracle.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.postgresql.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.sap.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.sdk.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.sqlite.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.enablement.sybase.feature.feature.group"/>
       <requirement
           name="org.eclipse.datatools.intro.feature.group"/>
       <requirement
           name="org.eclipse.datatools.modelbase.feature.feature.group"/>
       <requirement
+          name="org.eclipse.datatools.sdk.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.data.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.ddl.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group"/>
+      <requirement
           name="org.eclipse.datatools.sqldevtools.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.results.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group"/>
       <requirement
           name="org.eclipse.datatools.sqltools.doc.user.feature.group"/>
       <requirement
@@ -1014,9 +1068,7 @@
       <requirement
           name="org.eclipse.recommenders.rcp.feature.feature.group"/>
       <requirement
-          name="org.eclipse.rse.feature.group"/>
-      <requirement
-          name="org.eclipse.rse.useractions.feature.group"/>
+          name="org.eclipse.tips.feature.feature.group"/>
       <requirement
           name="org.eclipse.tm.terminal.feature.feature.group"/>
       <requirement
@@ -1034,9 +1086,9 @@
       <requirement
           name="org.eclipse.wst.xsl.feature.feature.group"/>
       <repository
-          url="http://download.eclipse.org/technology/epp/packages/photon"/>
+          url="http://download.eclipse.org/technology/epp/packages/2018-09"/>
       <repository
-          url="http://download.eclipse.org/releases/photon"/>
+          url="http://download.eclipse.org/releases/2018-09"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
