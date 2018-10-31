@@ -513,6 +513,8 @@
         name="org.mapstruct.eclipse.feature.feature.group"/>
     <requirement
         name="com.ifedorenko.m2e.sourcelookup.feature.feature.group"/>
+    <requirement
+        name="de.jcup.asciidoctoreditor.feature.group"/>
     <repository
         url="http://moreunit.sourceforge.net/update-site/"/>
     <repository
@@ -525,6 +527,8 @@
         url="https://dl.bintray.com/mapstruct/mapstruct-eclipse-site/"/>
     <repository
         url="http://ifedorenko.github.com/m2e-extras/"/>
+    <repository
+        url="https://dl.bintray.com/de-jcup/asciidoctoreditor"/>
   </setupTask>
   <version name="ee-mars"
       label="Mars EE+PDE+Plugins"
