@@ -553,13 +553,15 @@
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
-      label="Spotbugs Plugin (without m2e)"
+      label="JSON Editor Plugin"
       licenseConfirmationDisabled="true"
       mergeDisabled="true">
     <requirement
-        name="com.github.spotbugs.plugin.eclipse.feature.group"/>
+        name="jsonedit-feature.feature.group"/>
+    <requirement
+        name="org.antlr.v4.feature.group"/>
     <repository
-        url="https://spotbugs.github.io/eclipse"/>
+        url="http://boothen.github.io/Json-Eclipse-Plugin/"/>
   </setupTask>
   <setupTask
       xsi:type="setup.p2:P2Task"
@@ -574,6 +576,16 @@
         url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt/"/>
     <repository
         url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-buildhelper/0.15.0/N/0.15.0.201207090124/"/>
+  </setupTask>
+  <setupTask
+      xsi:type="setup.p2:P2Task"
+      label="Spotbugs Plugin (without m2e)"
+      licenseConfirmationDisabled="true"
+      mergeDisabled="true">
+    <requirement
+        name="com.github.spotbugs.plugin.eclipse.feature.group"/>
+    <repository
+        url="https://spotbugs.github.io/eclipse"/>
   </setupTask>
   <version name="latest"
       label="Latest EE+Plugins+Spotbugs"
