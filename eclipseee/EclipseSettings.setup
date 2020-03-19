@@ -104,6 +104,10 @@
         name="org.eclipse.jdt.core">
       <setupTask
           xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.subwordMatch"
+          value="enabled"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.annotation.inheritNullAnnotations"
           value="enabled"/>
       <setupTask
