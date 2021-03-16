@@ -513,6 +513,14 @@
       requiredJavaVersion="1.8">
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="Oomph from official Repo">
+      <requirement
+          name="org.eclipse.oomph.setup.feature.group"/>
+      <repository
+          url="${oomph.update.url}"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         label="Eclipse IDE for Enterprise Java Developers (2021-03)">
       <requirement
           name="epp.package.jee"
