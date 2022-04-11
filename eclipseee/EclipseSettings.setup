@@ -762,6 +762,14 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        label="M2E Connectors"
+        licenseConfirmationDisabled="true"
+        mergeDisabled="true">
+      <repository
+          url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         label="Spotbugs Plugin (without m2e)"
         licenseConfirmationDisabled="true"
         mergeDisabled="true">
