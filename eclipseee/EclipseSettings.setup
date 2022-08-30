@@ -748,7 +748,7 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="M2E Connectors"
+        label="M2E Code Quality Connectors"
         licenseConfirmationDisabled="true"
         mergeDisabled="true">
       <repository
