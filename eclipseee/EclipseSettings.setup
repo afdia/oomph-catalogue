@@ -521,17 +521,17 @@
       requiredJavaVersion="1.8">
     <setupTask
         xsi:type="setup.p2:P2Task"
-        label="Eclipse IDE for Enterprise Java and Web Developers (2022-06)">
+        label="Eclipse IDE for Enterprise Java and Web Developers (2023-06)">
       <requirement
           name="epp.package.jee"
-          versionRange="[4.24.0,5.0.0)"
+          versionRange="[4.28.0,5.0.0)"
           filter="(|(&amp;(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&amp;(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&amp;(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32)))"/>
       <requirement
           name="org.eclipse.platform.feature.group"
-          versionRange="[4.24.0,5.0.0)"/>
+          versionRange="[4.28.0,5.0.0)"/>
       <requirement
           name="org.eclipse.rcp.feature.group"
-          versionRange="[4.24.0,5.0.0)"/>
+          versionRange="[4.28.0,5.0.0)"/>
       <requirement
           name="org.eclipse.buildship.feature.group"/>
       <requirement
@@ -613,6 +613,8 @@
       <requirement
           name="org.eclipse.epp.mpc.feature.group"/>
       <requirement
+          name="org.eclipse.jdt.bcoview.feature.feature.group"/>
+      <requirement
           name="org.eclipse.jdt.feature.group"/>
       <requirement
           name="org.eclipse.jgit.feature.group"/>
@@ -671,6 +673,26 @@
       <requirement
           name="org.eclipse.m2e.wtp.jsf.feature.feature.group"/>
       <requirement
+          name="org.eclipse.mylyn.commons.activity.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.egit.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.git.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.github.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.hudson.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.ide_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.java_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.pde_feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.reviews.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.mylyn.wikitext_feature.feature.group"/>
+      <requirement
           name="org.eclipse.pde.feature.group"/>
       <requirement
           name="org.eclipse.tips.feature.feature.group"/>
@@ -687,9 +709,9 @@
       <requirement
           name="org.eclipse.wst.xsl.feature.feature.group"/>
       <repository
-          url="https://download.eclipse.org/technology/epp/packages/2022-06/202206091200"/>
+          url="https://download.eclipse.org/technology/epp/packages/2023-06/202306081200"/>
       <repository
-          url="https://download.eclipse.org/releases/2022-06/202206151000">
+          url="https://download.eclipse.org/releases/2023-06/202306141000">
         <annotation
             source="http://www.eclipse.org/oomph/setup/ReleaseTrain"/>
       </repository>
